@@ -7,6 +7,10 @@
   height: 100%;
   background-color: var(--gray1);
   position: relative;
+  background-image: url(/img/fondo.png);
+  background-position: center;
+  background-size: 102%;
+  background-repeat: no-repeat;
 }
 
 .caja-pistas {
@@ -16,12 +20,38 @@
   position: absolute;
   top: 14%;
   right: 17%;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
   transform: scale(0);
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 2rem;
+  z-index: 98;
+}
+
+.modal-next {
+  position: absolute;
+  width: 30rem;
+  height: 18rem;
+  background-color: var(--gray3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 2rem;
+  transition: all 0.3s ease-in-out;
+  transform: scale(0);
+  z-index: 99;
+  box-shadow: -2px 4px 1px var(--transparent);
+}
+
+button {
+  margin-top: 2rem;
+  width: 15rem;
+  height: 3rem;
+  border: none;
+  border-radius: 5rem;
+  box-shadow: -2px 4px 1px var(--transparent);
 }
 
 .tablero {
@@ -31,6 +61,10 @@
   display: grid;
   grid-template-columns: repeat(20, 1fr);
   grid-template-rows: repeat(10, 1fr);
+  transition: all 1s ease-out;
+  z-index: 1;
+  position: absolute;
+  border-radius: 1rem;
 }
 
 .acierto {
@@ -45,9 +79,54 @@
   color: var(--white);
 }
 
+/* tableros */
+#administracion {
+  transform: translateX(200rem);
+  z-index: 1;
+  background-image: url(/img/administracion.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#mantenimiento {
+  transform: translateX(200rem);
+  z-index: 1;
+  background-image: url(/img/Mantenimiento.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* marcas de acierto */
+
 #acierto1 {
   grid-area: 5/3/6/4;
   opacity: 0;
+}
+
+#acierto2 {
+  grid-area: 2/12/3/13;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#acierto3 {
+  grid-area: 9/18/10/19;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#acierto4 {
+  grid-area: 8/15/9/16;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#acierto5 {
+  grid-area: 3/3/4/4;
+  opacity: 0;
+  visibility: hidden;
 }
 
 /* MediaQueryes */

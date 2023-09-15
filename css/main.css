@@ -126,6 +126,15 @@ button {
   transform: translateX(200rem);
 }
 
+#almacen {
+  background-image: url(/img/almacen.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 1s ease-in;
+  transform: translateX(200rem);
+}
+
 /* posiciones de acierto */
 #acierto1 {
   grid-area: 3/6/5/8;
@@ -133,30 +142,37 @@ button {
 
 #acierto2 {
   grid-area: 2/5/3/6;
+  visibility: hidden;
 }
 
 #acierto3 {
   grid-area: 5/10/7/12;
+  visibility: hidden;
 }
 
 #acierto4 {
   grid-area: 9/9/10/10;
+  visibility: hidden;
 }
 
 #acierto5 {
   grid-area: 7/6/9/7;
+  visibility: hidden;
 }
 
 #acierto6 {
   grid-area: 5/18/7/20;
+  visibility: hidden;
 }
 
 #acierto7 {
   grid-area: 7/14/9/15;
+  visibility: hidden;
 }
 
 #acierto8 {
   grid-area: 7/12/9/13;
+  visibility: hidden;
 }
 
 /* MediaQueryes */

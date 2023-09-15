@@ -1,22 +1,3 @@
-//variables
-let acierto1 = document.getElementById("front1");
-let acierto2 = document.getElementById("front2");
-let acierto3 = document.getElementById("front3");
-let acierto4 = document.getElementById("front4");
-let acierto5 = document.getElementById("front5");
-let acierto6 = document.getElementById("front6");
-let acierto7 = document.getElementById("front7");
-let acierto8 = document.getElementById("front8");
-
-const administracion = document.getElementById("administracion");
-const almacen = document.getElementById("almacen");
-const mantenimiento = document.getElementById("mantenimiento");
-const operaciones = document.getElementById("operaciones");
-const operacionVia = document.getElementById("operacion-via");
-
-const cajaPistas = document.getElementById("caja-pistas");
-const modal = document.getElementById("modal-next");
-
 //funciones
 function iniciarJuego() {
   cajaPistas.innerHTML = `<h2>Pista</h2>` + `<p>${pista1.text}</p>`;
@@ -50,8 +31,21 @@ function nuevoMapa(mapa, mapa2) {
   }, 1500);
 }
 
+function abrirModal(e) {
+  setTimeout(() => {
+    modal.innerHTML =
+      `<p>${e.text}</p>` + `<button id="${e.btn}">siguiente mapa</button>`;
+    modal.style.transform = "scale(1)";
+  }, 300);
+}
+
+function cambiarTablero() {
+  modal.style;
+}
+
 //eventos
 
+//aciertos
 acierto1.addEventListener("click", () => {
   acierto1.classList.add("descubierto");
   renovarPista(pista2, acierto2);
@@ -89,6 +83,13 @@ acierto7.addEventListener("click", () => {
 
 acierto8.addEventListener("click", () => {
   acierto8.classList.add("descubierto");
+  cajaPistas.style.transform = "scale(0)";
+  abrirModal(toAlmacen);
+});
+
+//nuevo tablero
+nextAlmacen.addEventListener("click", () => {
+  console.log("Cambiando mapa");
 });
 
 //delay inicial pistas

@@ -6,7 +6,7 @@ class Pista {
 }
 
 const pista1 = new Pista(
-  "Si no quieres forzar los ojos, será mejor que tus focos están en buen estado."
+  "Si no quieres forzar los ojos, será mejor que tus focos estén en buen estado."
 );
 const pista2 = new Pista(
   "Correr por las escaleras solo te llevará más rápido... directo al suelo."
@@ -29,3 +29,14 @@ const pista7 = new Pista(
 const pista8 = new Pista(
   "Si tu espalda no deja de doler, una mejor postura al sentarte deberias escoger."
 );
+
+//Modales
+
+class Modal {
+  constructor(text, btn) {
+    this.text = text;
+    this.btn = btn;
+  }
+}
+
+const toAlmacen = new Modal("Lo lograste", nextAlmacen);

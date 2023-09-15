@@ -5,18 +5,18 @@
   align-items: center;
   width: 100%;
   height: 100%;
-  background-color: var(--gray1);
+  background-color: var(--gray);
   position: relative;
   background-image: url(/img/fondo.png);
   background-position: center;
-  background-size: 102%;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
 .caja-pistas {
   width: 30rem;
   height: 18rem;
-  background-color: var(--transparent);
+  background-color: var(--blue);
   position: absolute;
   top: 14%;
   right: 17%;
@@ -25,6 +25,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   border-radius: 2rem;
   z-index: 98;
 }
@@ -33,7 +34,7 @@
   position: absolute;
   width: 30rem;
   height: 18rem;
-  background-color: var(--gray3);
+  background-color: var(--red);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,7 +58,7 @@ button {
 .tablero {
   width: 100rem;
   height: 50rem;
-  background-color: var(--gray2);
+  background-color: var(--gray);
   display: grid;
   grid-template-columns: repeat(20, 1fr);
   grid-template-rows: repeat(10, 1fr);
@@ -68,65 +69,94 @@ button {
 }
 
 .acierto {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  justify-self: center;
+  width: 5rem;
+  height: 5rem;
+}
+
+.front {
+  background: transparent;
   width: 100%;
   height: 100%;
+  border-radius: 50%;
+  position: relative;
+  transition: 0.3s;
+  backface-visibility: hidden;
+  transform: rotateY(0deg);
+  transform-style: preserve-3d;
+  align-self: center;
+  justify-self: center;
+}
+
+.back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: rotateY(-180deg);
+  backface-visibility: hidden;
+  background: var(--yellow);
+  color: var(--black);
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--gray3);
-  border-radius: 50rem;
-  font-size: 2rem;
-  color: var(--white);
+  font-size: 30px;
+}
+
+.back::selection {
+  background: transparent;
+}
+
+.descubierto {
+  transform: rotateY(-180deg);
 }
 
 /* tableros */
 #administracion {
-  transform: translateX(200rem);
-  z-index: 1;
   background-image: url(/img/administracion.png);
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
-}
-
-#mantenimiento {
+  background-repeat: no-repeat;
+  transition: all 1s ease-in;
   transform: translateX(200rem);
-  z-index: 1;
-  background-image: url(/img/Mantenimiento.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
-/* marcas de acierto */
-
+/* posiciones de acierto */
 #acierto1 {
-  grid-area: 5/3/6/4;
-  opacity: 0;
+  grid-area: 3/6/5/8;
 }
 
 #acierto2 {
-  grid-area: 2/12/3/13;
-  opacity: 0;
-  visibility: hidden;
+  grid-area: 2/5/3/6;
 }
 
 #acierto3 {
-  grid-area: 9/18/10/19;
-  opacity: 0;
-  visibility: hidden;
+  grid-area: 5/10/7/12;
 }
 
 #acierto4 {
-  grid-area: 8/15/9/16;
-  opacity: 0;
-  visibility: hidden;
+  grid-area: 9/9/10/10;
 }
 
 #acierto5 {
-  grid-area: 3/3/4/4;
-  opacity: 0;
-  visibility: hidden;
+  grid-area: 7/6/9/7;
+}
+
+#acierto6 {
+  grid-area: 5/18/7/20;
+}
+
+#acierto7 {
+  grid-area: 7/14/9/15;
+}
+
+#acierto8 {
+  grid-area: 7/12/9/13;
 }
 
 /* MediaQueryes */

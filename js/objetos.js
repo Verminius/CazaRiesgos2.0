@@ -5,8 +5,27 @@ class Pista {
   }
 }
 
-const pista1 = new Pista("Esto es una pista");
-const pista2 = new Pista("Aquí aparece una nueva pista");
-const pista3 = new Pista("Y otra más");
-const pista4 = new Pista("Casi acabas");
-const pista5 = new Pista("La última");
+const pista1 = new Pista(
+  "Si no quieres forzar los ojos, será mejor que tus focos están en buen estado."
+);
+const pista2 = new Pista(
+  "Correr por las escaleras solo te llevará más rápido... directo al suelo."
+);
+const pista3 = new Pista(
+  "¡No dejes cajones abiertos! Alguien podría tropezar con ellos."
+);
+const pista4 = new Pista(
+  "La mejor manera de evitar accidentes, es terner organizado tu puesto de trabajo. ¡Recoge ese desorden!"
+);
+const pista5 = new Pista(
+  "Las herramientas y cables pertenecen al almacen, todo debe ir en su lugar."
+);
+const pista6 = new Pista(
+  "¡Enciende las luces! No eres un vampiro y tus ojos te lo agradecerán."
+);
+const pista7 = new Pista(
+  "¿Cómo podrías usar el extintor, si está detrás de más objetos? Mantenlo despejado."
+);
+const pista8 = new Pista(
+  "Si tu espalda no deja de doler, una mejor postura al sentarte deberias escoger."
+);

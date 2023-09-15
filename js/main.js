@@ -1,9 +1,12 @@
 //variables
-let acierto1 = document.getElementById("acierto1");
-let acierto2 = document.getElementById("acierto2");
-let acierto3 = document.getElementById("acierto3");
-let acierto4 = document.getElementById("acierto4");
-let acierto5 = document.getElementById("acierto5");
+let acierto1 = document.getElementById("front1");
+let acierto2 = document.getElementById("front2");
+let acierto3 = document.getElementById("front3");
+let acierto4 = document.getElementById("front4");
+let acierto5 = document.getElementById("front5");
+let acierto6 = document.getElementById("front6");
+let acierto7 = document.getElementById("front7");
+let acierto8 = document.getElementById("front8");
 
 const administracion = document.getElementById("administracion");
 const almacen = document.getElementById("almacen");
@@ -13,10 +16,10 @@ const operacionVia = document.getElementById("operacion-via");
 
 const cajaPistas = document.getElementById("caja-pistas");
 const modal = document.getElementById("modal-next");
-const next = document.getElementById("next");
 
 //funciones
 function iniciarJuego() {
+  cajaPistas.innerHTML = `<h2>Pista</h2>` + `<p>${pista1.text}</p>`;
   setTimeout(() => {
     administracion.style.transform = "translateX(0rem)";
   }, 500);
@@ -30,7 +33,7 @@ function renovarPista(clue, acierto) {
     cajaPistas.style.transform = "scale(0)";
   }, 100);
   setTimeout(() => {
-    cajaPistas.innerHTML = `<p>${clue.text}</p>`;
+    cajaPistas.innerHTML = `<h2>Pista</h2>` + `<p>${clue.text}</p>`;
   }, 600);
   setTimeout(() => {
     cajaPistas.style.transform = "scale(1)";
@@ -50,35 +53,42 @@ function nuevoMapa(mapa, mapa2) {
 //eventos
 
 acierto1.addEventListener("click", () => {
-  acierto1.style.opacity = 1;
+  acierto1.classList.add("descubierto");
   renovarPista(pista2, acierto2);
 });
 
 acierto2.addEventListener("click", () => {
-  acierto2.style.opacity = 1;
+  acierto2.classList.add("descubierto");
   renovarPista(pista3, acierto3);
 });
 
 acierto3.addEventListener("click", () => {
-  acierto3.style.opacity = 1;
+  acierto3.classList.add("descubierto");
   renovarPista(pista4, acierto4);
 });
 
 acierto4.addEventListener("click", () => {
-  acierto4.style.opacity = 1;
+  acierto4.classList.add("descubierto");
   renovarPista(pista5, acierto5);
 });
 
 acierto5.addEventListener("click", () => {
-  acierto5.style.opacity = 1;
-  renovarPista();
-  setTimeout(() => {
-    modal.style.transform = "scale(1)";
-  }, 500);
+  acierto5.classList.add("descubierto");
+  renovarPista(pista6, acierto6);
 });
 
-next.addEventListener("click", () => {
-  nuevoMapa(administracion, mantenimiento);
+acierto6.addEventListener("click", () => {
+  acierto6.classList.add("descubierto");
+  renovarPista(pista7, acierto7);
+});
+
+acierto7.addEventListener("click", () => {
+  acierto7.classList.add("descubierto");
+  renovarPista(pista8, acierto8);
+});
+
+acierto8.addEventListener("click", () => {
+  acierto8.classList.add("descubierto");
 });
 
 //delay inicial pistas

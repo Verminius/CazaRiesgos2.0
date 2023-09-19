@@ -1,0 +1,219 @@
+/* POSICIONES DE ACIERTOS */
+/* administracion */
+#acierto1 {
+  grid-area: 3/6/5/8;
+}
+
+#acierto2 {
+  grid-area: 2/5/3/6;
+  visibility: hidden;
+}
+
+#acierto3 {
+  grid-area: 5/10/7/12;
+  visibility: hidden;
+}
+
+#acierto4 {
+  grid-area: 9/9/10/10;
+  visibility: hidden;
+}
+
+#acierto5 {
+  grid-area: 7/6/9/7;
+  visibility: hidden;
+}
+
+#acierto6 {
+  grid-area: 5/18/7/20;
+  visibility: hidden;
+}
+
+#acierto7 {
+  grid-area: 7/14/9/15;
+  visibility: hidden;
+}
+
+#acierto8 {
+  grid-area: 7/12/9/13;
+  visibility: hidden;
+}
+
+/* almacen */
+#acierto9 {
+  grid-area: 6/2/8/3;
+  visibility: visible;
+}
+
+#acierto10 {
+  grid-area: 3/4/4/5;
+  visibility: hidden;
+}
+
+#acierto11 {
+  grid-area: 9/6/10/7;
+  visibility: hidden;
+}
+
+#acierto12 {
+  grid-area: 3/9/4/11;
+  visibility: hidden;
+}
+
+#acierto13 {
+  grid-area: 7/10/9/12;
+  visibility: hidden;
+}
+
+#acierto14 {
+  grid-area: 7/16/8/17;
+  visibility: hidden;
+}
+
+#acierto15 {
+  grid-area: 4/18/5/19;
+  visibility: hidden;
+}
+
+/* mantenimiento */
+#acierto16 {
+  grid-area: 3/3/5/4;
+  visibility: visible;
+}
+
+#acierto17 {
+  grid-area: 2/7/3/8;
+  visibility: hidden;
+}
+
+#acierto18 {
+  grid-area: 4/6/5/7;
+  visibility: hidden;
+}
+
+#acierto19 {
+  grid-area: 8/4/9/5;
+  visibility: hidden;
+}
+
+#acierto20 {
+  grid-area: 2/11/3/12;
+  visibility: hidden;
+}
+
+#acierto21 {
+  grid-area: 3/13/5/15;
+  visibility: hidden;
+}
+
+#acierto22 {
+  grid-area: 5/15/7/16;
+  visibility: hidden;
+}
+
+#acierto23 {
+  grid-area: 8/18/9/19;
+  visibility: hidden;
+}
+
+#acierto24 {
+  grid-area: 4/2/6/3;
+  visibility: hidden;
+}
+
+#acierto25 {
+  grid-area: 9/13/11/14;
+  visibility: hidden;
+}
+
+#acierto26 {
+  grid-area: 8/16/10/17;
+  visibility: hidden;
+}
+
+/* operaciones */
+#acierto27 {
+  grid-area: 1/5/3/6;
+  visibility: visible;
+}
+
+#acierto28 {
+  grid-area: 6/14/8/16;
+  visibility: hidden;
+}
+
+#acierto29 {
+  grid-area: 2/13/4/14;
+  visibility: hidden;
+}
+
+#acierto30 {
+  grid-area: 8/16/9/18;
+  visibility: hidden;
+}
+
+#acierto31 {
+  grid-area: 6/4/8/6;
+  visibility: hidden;
+}
+
+#acierto32 {
+  grid-area: 8/8/10/10;
+  visibility: hidden;
+}
+
+#acierto33 {
+  grid-area: 5/17/7/19;
+  visibility: hidden;
+}
+
+#acierto34 {
+  grid-area: 1/9/3/10;
+  visibility: hidden;
+}
+
+#acierto35 {
+  grid-area: 8/1/10/3;
+  visibility: hidden;
+}
+
+#acierto36 {
+  grid-area: 3/18/5/19;
+  visibility: hidden;
+}
+
+/* operiaciones via */
+#acierto37 {
+  grid-area: 2/3/4/5;
+  visibility: visible;
+}
+
+#acierto38 {
+  grid-area: 6/12/7/13;
+  visibility: hidden;
+}
+
+#acierto39 {
+  grid-area: 8/2/10/3;
+  visibility: hidden;
+}
+
+#acierto40 {
+  grid-area: 1/14/3/16;
+  visibility: hidden;
+}
+
+#acierto41 {
+  grid-area: 5/16/6/17;
+  visibility: hidden;
+}
+
+#acierto42 {
+  grid-area: 4/17/5/18;
+  visibility: hidden;
+}
+
+#acierto43 {
+  grid-area: 9/16/10/18;
+  visibility: hidden;
+}

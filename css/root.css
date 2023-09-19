@@ -31,6 +31,7 @@ body {
   align-items: center;
   background-color: var(--gray);
   gap: 2rem;
+  overflow: hidden;
 }
 
 h1 {

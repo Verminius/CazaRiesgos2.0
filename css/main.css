@@ -46,13 +46,33 @@
   box-shadow: -2px 4px 1px var(--transparent);
 }
 
-button {
+.next {
   margin-top: 2rem;
   width: 15rem;
   height: 3rem;
   border: none;
+  background-color: var(--yellow);
   border-radius: 5rem;
   box-shadow: -2px 4px 1px var(--transparent);
+  transition: all 0.3s ease-in;
+  transform: scale(1);
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.next:hover {
+  transform: scale(1.02);
+  background-color: var(--blue);
+}
+
+.next:active {
+  transform: scale(0.98);
+  background-color: var(--yellow);
+}
+
+.imgFin {
+  width: 5rem;
+  height: auto;
 }
 
 .tablero {
@@ -77,6 +97,7 @@ button {
   justify-self: center;
   width: 5rem;
   height: 5rem;
+  z-index: 99;
 }
 
 .front {
@@ -122,7 +143,7 @@ button {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  transition: all 1s ease-in;
+  transition: all 1s ease-in-out;
   transform: translateX(200rem);
 }
 
@@ -131,55 +152,82 @@ button {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  transition: all 1s ease-in;
+  transition: all 1s ease-in-out;
   transform: translateX(200rem);
 }
 
-/* posiciones de acierto */
-#acierto1 {
-  grid-area: 3/6/5/8;
+#mantenimiento {
+  background-image: url(/img/Mantenimiento.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 1s ease-in-out;
+  transform: translateX(200rem);
 }
 
-#acierto2 {
-  grid-area: 2/5/3/6;
-  visibility: hidden;
+#operaciones {
+  background-image: url(/img/operaciones.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 1s ease-in-out;
+  transform: translateX(200rem);
 }
 
-#acierto3 {
-  grid-area: 5/10/7/12;
-  visibility: hidden;
-}
-
-#acierto4 {
-  grid-area: 9/9/10/10;
-  visibility: hidden;
-}
-
-#acierto5 {
-  grid-area: 7/6/9/7;
-  visibility: hidden;
-}
-
-#acierto6 {
-  grid-area: 5/18/7/20;
-  visibility: hidden;
-}
-
-#acierto7 {
-  grid-area: 7/14/9/15;
-  visibility: hidden;
-}
-
-#acierto8 {
-  grid-area: 7/12/9/13;
-  visibility: hidden;
+#operacion-via {
+  background-image: url(/img/operacionVia.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 1s ease-in-out;
+  transform: translateX(200rem);
 }
 
 /* MediaQueryes */
 
-@media screen and (max-width: 1500px) {
+@media screen and (min-width: 1510px) {
+  .tablero {
+    width: 130rem;
+    height: 65rem;
+  }
+
+  .caja-pistas {
+    top: 10%;
+    right: 8%;
+  }
+}
+
+@media screen and (max-width: 1500px) and (min-width: 1000px) {
   .caja-pistas {
     top: 13%;
     right: 2%;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .tablero {
+    width: 90rem;
+    height: 45rem;
+  }
+
+  .caja-pistas {
+    width: 22rem;
+    height: 13.2rem;
+    top: 8%;
+    right: 0.5%;
+  }
+
+  .acierto {
+    width: 4.6rem;
+    height: 4.6rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.4rem;
+    padding: 0.8rem 2rem;
   }
 }

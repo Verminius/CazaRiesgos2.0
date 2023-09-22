@@ -3,27 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/main.css" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon" />
+
+    <!-- estilos -->
     <link rel="stylesheet" href="/css/root.css" />
+    <link rel="stylesheet" href="/css/index.css" />
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/32bb34e7d2.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Titulo -->
     <title>Home</title>
   </head>
   <body>
-    <div class="container">
-      <h1>MASIVO CAPITAL</h1>
-      <h2>MASIVO CAPITAL</h2>
-      <h3>MASIVO CAPITAL</h3>
-      <h4>MASIVO CAPITAL</h4>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus,
-        doloribus asperiores reiciendis dolore minima deleniti libero quo nulla
-        odio aspernatur, nostrum veniam fugit deserunt placeat? Lorem ipsum
-        dolor sit amet consectetur adipisicing elit. Asperiores, incidunt.
-        Nostrum quis quam accusantium natus? Placeat maiores nesciunt nemo
-        repudiandae veritatis aliquid provident, itaque repellendus, inventore
-        ducimus quisquam repellat deleniti laboriosam perferendis quia corrupti
-        ullam similique quas fuga eligendi ad. Facere, odio atque. Nihil minus
-        maiores atque vero ex cumque.
-      </p>
+    <!-- header -->
+    <div class="container-top">
+      <img src="/img/logo-juego.png" class="logo-juego" />
+      <button class="inicio">Jugar</button>
     </div>
+
+    <!-- MAIN -->
+    <!-- animacion inicio -->
+    <div class="cont-instrucciones">
+      <div class="title-box"><h1>Instrucciones</h1></div>
+      <div class="info-box">
+        <div class="img-inst"></div>
+        <div class="text-inst"></div>
+      </div>
+      <div class="arrow-box">
+        <button class="arrow left">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <button class="arrow rigth">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- animacion inicio -->
+    <div class="container"></div>
+
+    <!-- footer -->
+    <div class="container-bottom">
+      <img src="/img/inf-der.png" class="logo-bol" />
+      <img src="/img/logo-mc.png" class="logo-mc" />
+    </div>
+    <!-- script -->
+    <script src="/js/objetos.js"></script>
+    <script src="/js/index.js"></script>
   </body>
 </html>

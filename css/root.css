@@ -15,7 +15,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
-  color: var(--white);
 }
 
 html {
@@ -32,6 +31,7 @@ body {
   background-color: var(--gray);
   gap: 2rem;
   overflow: hidden;
+  color: var(--black);
 }
 
 h1 {

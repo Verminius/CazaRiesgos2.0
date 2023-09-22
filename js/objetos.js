@@ -1,3 +1,27 @@
+//Instrucciones
+class Instruccion {
+  constructor(img, text, left, rigth) {
+    this.img = img;
+    this.text = text;
+    this.left = left;
+    this.rigth = rigth;
+  }
+}
+
+const inst1 = new Instruccion(
+  '<img src="/img/logo-juego-box.png" class="img" />',
+  "¡Bienvenidos al Caza Riesgos Masivo Capital"
+);
+const inst2 = new Instruccion(
+  '<img src="/img/inst1.png" class="img" />',
+  "Una vez inicies el juego, fíjate en la pista en la esquina superior derecha y busca en el mapa"
+);
+const inst3 = new Instruccion(
+  '<img src="/img/inst2.png" class="img" />',
+  "Al dar click en la imagen correcta, una nueva pista parecerá y el juego continuará hasta que llegues al tablero final"
+);
+const inst4 = new Instruccion();
+
 //Pistas
 class Pista {
   constructor(text) {

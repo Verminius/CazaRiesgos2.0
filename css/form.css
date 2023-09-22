@@ -1,0 +1,140 @@
+/* caja principal */
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem 1.5rem 1.5rem 1.5rem;
+  gap: 1rem;
+  border-radius: 1.5rem;
+  background-color: var(--red);
+  box-shadow: -0.2rem 0.6rem 1rem var(--transparent);
+}
+
+.form-tittle-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  align-self: stretch;
+  border-bottom: 0.1rem solid var(--black);
+}
+
+.form-tittle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.form-tittle h2 {
+  color: var(--white);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.form-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 1rem 0rem 2rem 0rem;
+  border-bottom: 0.1rem solid var(--black);
+}
+
+.form-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.form-input label {
+  color: var(--white);
+  font-size: 1.5rem;
+}
+
+.form-input input {
+  width: 35.6rem;
+  height: 4.4rem;
+  border-radius: 0.6rem;
+  background-color: var(--white);
+  border: none;
+  padding: 0rem 0rem 0rem 1rem;
+}
+
+.form-line-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.form-input-short {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.form-input-short label {
+  color: var(--white);
+  font-size: 1.5rem;
+}
+
+.form-input-short input {
+  width: 17.2rem;
+  height: 4.4rem;
+  border-radius: 0.6rem;
+  background-color: var(--white);
+  border: none;
+  padding: 0rem 0rem 0rem 1rem;
+}
+
+.form-btn-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-self: stretch;
+}
+
+.form-btn {
+  display: flex;
+  padding: 1rem 5rem;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 1rem;
+  background-color: var(--yellow);
+  font-weight: 900;
+  font-size: 2rem;
+  transition: all 0.3s ease;
+  transform: scale(1);
+  box-shadow: -0.2rem 0.2rem 0.5rem var(--transparent);
+}
+
+.form-btn:hover {
+  transform: scale(1.05);
+  box-shadow: -0.2rem 0.2rem 1rem var(--transparent);
+  color: var(--white);
+  background-color: var(--blue);
+}
+
+.form-btn:active {
+  transform: scale(0.95);
+  box-shadow: -0.06rem 0.06rem 0.2rem var(--transparent);
+}

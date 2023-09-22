@@ -91,7 +91,7 @@ rigthArrow.addEventListener("click", () => {
   } else if (conteo == 3) {
     pasarSiguiente(inst3);
   } else if (conteo >= 4) {
-    location.assign("/game.html");
+    location.assign("/form.html");
   }
 
   console.log(conteo);
